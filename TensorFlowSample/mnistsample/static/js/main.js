@@ -86,7 +86,8 @@ class Main {
                 url: '/api/mnist',
                 method: 'POST',
                 contentType: 'application/json',
-                data: JSON.stringify({data:inputs}),
+                //data: JSON.stringify({data:inputs}),
+                data: JSON.stringify(inputs),
                 success: (data) => {
                     for (let i = 0; i < 2; i++) {
                         var max = 0;
